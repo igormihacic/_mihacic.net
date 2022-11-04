@@ -1,0 +1,444 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Igor Mihačič's - home and playground</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="title" content="Igor Mihačič's - home and playground" />
+    <meta
+      name="Description"
+      content="Wellcome to my playground. I like to play with web development, SEO and analytics, page speed optimization and many more things."
+    />
+
+    <!-- <meta property="og:title" content="">
+		<meta property="og:type" content="">
+		<meta property="og:url" content="">
+		<meta property="og:image" content=""> -->
+
+    <link rel="preload" as="image" href="media/igormihacic.webp" />
+    <link rel="preload" as="image" href="media/background-hero.webp" />
+    <link rel="preload" as="image" href="media/background-hero_p.webp" />
+    <link rel="stylesheet" href="css/bulma.min.css" />
+    <link rel="stylesheet" href="css/main.min.css" />
+
+    <meta name="theme-color" content="#171412" />
+
+    <script src="js/main.js" defer></script>
+    <script
+      src="https://code.iconify.design/3/3.0.0/iconify.min.js"
+      defer
+    ></script>
+  </head>
+
+  <body class="has-spaced-navbar-fixed-top" id="home">
+    <!-- navigation -->
+    <header>
+      <nav class="navbar is-fixed-top is-spaced">
+        <div class="container">
+          <div class="navbar-brand">
+            <a href="/" class="navbar-item">
+              <img src="media/mihacic-logo.svg" alt="Take me back home." />
+            </a>
+
+            <a
+              role="button"
+              class="navbar-burger"
+              data-target="navMenu"
+              aria-label="menu"
+              aria-expanded="false"
+            >
+              <span aria-hidden="true"></span>
+              <span aria-hidden="true"></span>
+              <span aria-hidden="true"></span>
+            </a>
+          </div>
+          <div class="navbar-menu" id="navMenu">
+            <div class="navbar-end is-align-self-center im-navbar-link">
+              <a href="#home" class="navbar-item">Home</a>
+              <a href="#my-passions" class="navbar-item">About me</a>
+              <a href="#contact" class="navbar-item">Knock, knock!</a>
+            </div>
+          </div>
+        </div>
+      </nav>
+    </header>
+
+    <!-- intro section -->
+    <section class="hero is-fullheight-with-navbar">
+      <div class="hero-body">
+        <div class="container">
+          <div class="columns im-primary-color">
+            <div
+              class="column is-half is-flex is-flex-direction-column is-justify-content-center"
+            >
+              <figure class="image im-impic">
+                <img
+                  src="media/igormihacic.webp"
+                  alt=""
+                  class="is-rounded"
+                  style="border: 10px solid rgba(134, 114, 94, 0.329)"
+                />
+              </figure>
+            </div>
+
+            <div
+              class="column is-half-tablet is-one-third-desktop is-flex is-flex-direction-column is-justify-content-center"
+            >
+              <div class="block">
+                <h1 class="title is-1 im-primary-color">
+                  Wellcome to my <br />playground!
+                </h1>
+              </div>
+              <div class="block">
+                <h2 class="subtitle is-3 mt-5 im-primary-color">
+                  Hi. I'm Igor and I'm passionate about a lot of things.
+                </h2>
+              </div>
+              <div class="block has-text-centered mt-5">
+                <a href="#my-passions" class="button im-btn-orange-inverted"
+                  >Find out which</a
+                >
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- passions section -->
+    <div id="my-passions" class="anchor"></div>
+    <section class="section mt-6">
+      <div class="container">
+        <div class="block mb-6">
+          <h2 class="title is-1 im-primary-color has-text-centered pb-6">
+            My passions
+          </h2>
+        </div>
+        <div class="block mt-6">
+          <div class="columns is-multiline">
+            <div class="column is-half-tablet is-one-third-desktop is-relative">
+              <figure class="mb-8">
+                <img
+                  src="media/undraw_web_developer_p3e5.svg"
+                  alt="Photography"
+                  class="im-passion-img"
+                  loading="lazy"
+                />
+              </figure>
+              <h3
+                class="im-primary-color title is-4 has-text-centered im-passion-titile"
+              >
+                <span>Web Development</span>
+              </h3>
+            </div>
+            <div class="column is-half-tablet is-one-third-desktop is-relative">
+              <figure class="mb-8">
+                <img
+                  src="media/undraw_fast_loading_0lbh.svg"
+                  alt="Page speed"
+                  class="im-passion-img"
+                  loading="lazy"
+                />
+              </figure>
+              <h3
+                class="im-primary-color title is-4 has-text-centered im-passion-titile"
+              >
+                <span>Page Speed Optimization</span>
+              </h3>
+            </div>
+            <div class="column is-half-tablet is-one-third-desktop is-relative">
+              <figure class="mb-8">
+                <img
+                  src="media/undraw_visual_data_b1wx.svg"
+                  alt="SEO & Analytics"
+                  class="im-passion-img"
+                  loading="lazy"
+                />
+              </figure>
+              <h3
+                class="im-primary-color title is-4 has-text-centered im-passion-titile"
+              >
+                <span>SEO & Analytics</span>
+              </h3>
+            </div>
+            <div class="column is-half-tablet is-one-third-desktop is-relative">
+              <figure class="mb-8">
+                <img
+                  src="media/undraw_photo_session_clqr.svg"
+                  alt="Photography"
+                  class="im-passion-img"
+                  loading="lazy"
+                />
+              </figure>
+              <h3
+                class="im-primary-color title is-4 has-text-centered im-passion-titile"
+              >
+                <span>Photography</span>
+              </h3>
+            </div>
+            <div class="column is-half-tablet is-one-third-desktop is-relative">
+              <figure class="mb-8">
+                <img
+                  src="media/undraw_experience_design_eq3j.svg"
+                  alt="Sailing"
+                  class="im-passion-img"
+                  loading="lazy"
+                />
+              </figure>
+              <h3
+                class="im-primary-color title is-4 has-text-centered im-passion-titile"
+              >
+                <span>UI/UX Design</span>
+              </h3>
+            </div>
+            <div class="column is-half-tablet is-one-third-desktop is-relative">
+              <figure class="mb-8">
+                <img
+                  src="media/undraw_Scrum_board_re_wk7v.svg"
+                  alt="Sailing"
+                  class="im-passion-img"
+                  loading="lazy"
+                />
+              </figure>
+              <h3
+                class="im-primary-color title is-4 has-text-centered im-passion-titile"
+              >
+                <span>Project Managemnt</span>
+              </h3>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- CONTACT section -->
+    <div id="contact" class="anchor"></div>
+    <div id="thanks" class="anchor"></div>
+    <section class="section">
+      <div class="container">
+        <div class="block mb-6">
+          <h2 class="title has-text-centered is-1 im-primary-color">Contact</h2>
+        </div>
+        <div class="block">
+          <div class="columns">
+            <div class="column is-one-third im-primary-color">
+              <div class="box content my-3 im-box">
+                <h3 class="im-primary-color">Igor Mihačič</h3>
+                <p>
+                  Well, on the right side (or down below on small screens) you
+                  have a contact form which will send me an email. If you prefer
+                  to send me an email directly, don't hasitate! Here's my
+                  address (JS SPAM-proof ;):
+                </p>
+                <p style="display: flex; vertical-align: center">
+                  <span
+                    class="iconify"
+                    data-icon="ic:baseline-email"
+                    data-inline="fasle"
+                    style="
+                      margin-right: 0.8rem;
+                      font-size: 1.3rem;
+                      color: rgb(190, 124, 0);
+                      margin-top: 0.1rem;
+                    "
+                  ></span>
+                  <script src="js/mejl.js"></script>
+                </p>
+                <p>... and some other "channels" ...</p>
+                <p style="display: flex; vertical-align: center" class="mb-2">
+                  <span
+                    class="iconify"
+                    data-icon="mdi:skype"
+                    data-inline="fasle"
+                    style="
+                      margin-right: 0.8rem;
+                      font-size: 1.5rem;
+                      color: rgb(190, 124, 0);
+                    "
+                  ></span>
+                  <a href="skype:roggy_si?chat">Start a Skype Chat</a>
+                </p>
+                <p style="display: flex; vertical-align: center" class="mb-2">
+                  <span
+                    class="iconify"
+                    data-icon="mdi:twitter"
+                    data-inline="fasle"
+                    style="
+                      margin-right: 0.8rem;
+                      font-size: 1.5rem;
+                      color: rgb(190, 124, 0);
+                    "
+                  ></span
+                  ><a href="https://twitter.com/igormihacic">@igormihacic</a>
+                </p>
+                <p style="display: flex; vertical-align: center" class="mb-2">
+                  <span
+                    class="iconify"
+                    data-icon="mdi:github"
+                    data-inline="fasle"
+                    style="
+                      margin-right: 0.8rem;
+                      font-size: 1.5rem;
+                      color: rgb(190, 124, 0);
+                    "
+                  ></span
+                  ><a href="https://github.com/igormihacic">My GitHub</a>
+                </p>
+              </div>
+            </div>
+
+            <div class="column is-two-thirds">
+              <form
+                action="https://formsubmit.co/web.contact@mihacic.net"
+                id="contact-form"
+                method="post"
+              >
+                <div class="field is-horizontal py-3">
+                  <div class="field-label is-normal">
+                    <label class="label">From</label>
+                  </div>
+                  <div class="field-body">
+                    <div class="field">
+                      <p class="control is-expanded has-icons-left">
+                        <input
+                          class="input"
+                          type="text"
+                          name="name"
+                          placeholder="Name"
+                        />
+                        <span class="icon is-left">
+                          <span
+                            class="iconify"
+                            data-icon="ic:baseline-person"
+                            data-inline="false"
+                          ></span>
+                        </span>
+                      </p>
+                    </div>
+                    <div class="field">
+                      <p
+                        class="control is-expanded has-icons-left has-icons-right"
+                      >
+                        <input
+                          class="input"
+                          type="email"
+                          name="email"
+                          placeholder="Your e-mail"
+                          required
+                        />
+                        <span class="icon is-left">
+                          <span
+                            class="iconify"
+                            data-icon="ic:baseline-email"
+                            data-inline="false"
+                          ></span>
+                        </span>
+                      </p>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="field is-horizontal py-3">
+                  <div class="field-label is-normal">
+                    <label class="label">Subject</label>
+                  </div>
+                  <div class="field-body">
+                    <div class="field">
+                      <div class="control">
+                        <input
+                          class="input"
+                          type="text"
+                          name="subject"
+                          placeholder="e.g. Partnership opportunity"
+                          required
+                        />
+                        <input id="_next" type="hidden" name="_next" value="" />
+                      </div>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="field is-horizontal py-3">
+                  <div class="field-label is-normal">
+                    <label class="label">Message</label>
+                  </div>
+                  <div class="field-body">
+                    <div class="field">
+                      <div class="control">
+                        <textarea
+                          class="textarea"
+                          name="message"
+                          placeholder="Say something nice ..."
+                          required
+                        ></textarea>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="field is-horizontal py-3">
+                  <div class="field-label">
+                    <!-- Left empty for spacing -->
+                  </div>
+                  <div class="field-body">
+                    <div class="field is-grouped is-grouped-centered">
+                      <div class="control">
+                        <input
+                          type="submit"
+                          class="button im-btn-orange-inverted"
+                          value="Send message"
+                        />
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </form>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <div id="thanks-modal" class="modal">
+      <div class="modal-background"></div>
+      <div class="modal-content has-background-light p-5">
+        <h2 class="title is-4">Thank you for contacting me!</h2>
+        <p class="mb-4">
+          Expect my replay in no more the one business day. Usually comes
+          faster.
+        </p>
+        <p>
+          Best regards, <br />
+          Igor
+        </p>
+        <div class="block has-text-centered">
+          <button class="button is-outlined is-success thanks-close">
+            Back to page
+          </button>
+        </div>
+      </div>
+      <button
+        class="modal-close is-large thanks-close"
+        aria-label="close"
+      ></button>
+    </div>
+    <!-- Matomo -->
+    <script>
+      var _paq = (window._paq = window._paq || []);
+      /* tracker methods like "setCustomDimension" should be called before "trackPageView" */
+      _paq.push(["trackPageView"]);
+      _paq.push(["enableLinkTracking"]);
+      (function () {
+        var u = "//analytics.mihacic.net/";
+        _paq.push(["setTrackerUrl", u + "matomo.php"]);
+        _paq.push(["setSiteId", "1"]);
+        var d = document,
+          g = d.createElement("script"),
+          s = d.getElementsByTagName("script")[0];
+        g.async = true;
+        g.src = u + "matomo.js";
+        s.parentNode.insertBefore(g, s);
+      })();
+    </script>
+    <!-- End Matomo Code -->
+  </body>
+</html>

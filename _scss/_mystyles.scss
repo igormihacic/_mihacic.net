@@ -1,0 +1,232 @@
+@charset "utf-8";
+
+html {
+}
+
+body {
+	background-color: black;
+	background: linear-gradient(0deg, rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)),
+		url(../media/background-hero.webp) no-repeat center center fixed;
+	-webkit-background-size: cover;
+	-moz-background-size: cover;
+	-o-background-size: cover;
+	background-size: cover;
+}
+
+.navbar {
+	background-color: rgba(0, 0, 0, 0.7);
+	font-size: 1.2rem;
+}
+
+.navbar-brand .navbar-item,
+.navbar-brand .navbar-item:hover {
+	border: 0px solid transparent;
+}
+
+.im-navbar-link a {
+	color: rgb(219, 143, 0);
+	font-weight: 400;
+	border: 1px solid transparent;
+	padding-left: 1.5rem;
+	padding-right: 1.5rem;
+	text-align: right;
+}
+
+a.navbar-item:hover {
+	color: rgb(185, 185, 185);
+	border-color: rgb(219, 143, 0);
+	border: 1px solid rgb(219, 143, 0);
+	background-color: transparent;
+}
+
+a.navbar-item img {
+	width: 12rem;
+	height: auto;
+}
+
+.navbar-burger,
+a.navbar-burger:hover {
+	color: rgb(185, 185, 185);
+}
+
+.im-primary-color,
+.content h3 {
+	color: rgb(185, 185, 185);
+}
+
+.im-impic {
+	width: 310px;
+	height: auto;
+	margin: auto;
+}
+
+.im-btn-orange-inverted,
+#contact-form input[type="submit"] {
+	color: rgb(190, 124, 0);
+	border: 2px solid rgb(190, 124, 0);
+	background-color: rgba(0, 0, 0, 0.2);
+}
+
+.im-btn-orange-inverted:hover,
+#contact-form input[type="submit"]:hover {
+	color: rgb(0, 0, 0);
+	border: 2px solid rgb(190, 124, 0);
+	/* 	background-color: rgb(190, 124, 0); */
+	background-color: hsl(39, 100%, 37%);
+	background-color: hsl(39, 100%, 60%);
+}
+
+.im-passion-img {
+	border: 10px solid rgba(134, 114, 94, 0.329);
+	background-color: rgba(0, 0, 0, 0.7);
+	width: 290px;
+	height: 290px;
+	border-radius: 6000px;
+	display: block;
+	margin: 0 auto;
+}
+
+.im-passion-titile {
+	position: absolute;
+	left: 0;
+	right: 0;
+	top: 260px;
+}
+
+.im-passion-titile span {
+	display: inline-block;
+	// color: rgb(219, 143, 0);
+	padding: 1rem 2rem;
+	border-radius: 2rem;
+	border: 5px solid rgba(134, 114, 94, 0.329);
+	background-color: rgba(0, 0, 0, 1);
+}
+
+.mb-8 {
+	margin-bottom: 5rem !important;
+}
+
+#contact-form input,
+#contact-form textarea {
+	background-color: rgba(0, 0, 0, 0.7);
+	color: rgb(185, 185, 185);
+}
+
+#contact-form label {
+	color: rgb(185, 185, 185);
+}
+
+#contact-form input:focus,
+#contact-form textarea:focus {
+	border-color: rgb(190, 124, 0);
+}
+
+#contact-form ::placeholder {
+	/* Chrome, Firefox, Opera, Safari 10.1+ */
+	color: rgb(68, 68, 68);
+	opacity: 1; /* Firefox */
+}
+
+#contact-form :-ms-input-placeholder {
+	/* Internet Explorer 10-11 */
+	color: rgb(68, 68, 68);
+}
+
+#contact-form ::-ms-input-placeholder {
+	/* Microsoft Edge */
+	color: rgb(68, 68, 68);
+}
+
+.anchor {
+	display: block;
+	padding-top: 1px;
+	margin-top: -1px;
+}
+.box.im-box {
+	border: 10px solid rgba(134, 114, 94, 0.329);
+	background-color: rgba(0, 0, 0, 0.8);
+	color: rgb(185, 185, 185);
+}
+
+.box.im-box a {
+	color: rgb(219, 143, 0);
+}
+
+.box.im-box a:hover {
+	text-decoration: underline;
+}
+
+@media screen and (max-width: 768px) {
+	body {
+		background-color: black;
+		background: linear-gradient(0deg, rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)),
+			url(../media/background-hero_p.webp) no-repeat center center fixed;
+		-webkit-background-size: cover;
+		-moz-background-size: cover;
+		-o-background-size: cover;
+		background-size: cover;
+	}
+
+	a.navbar-item img {
+		width: 10rem;
+		height: auto;
+	}
+
+	.im-impic {
+		width: 250px;
+		height: auto;
+		margin: auto;
+		margin-top: 2rem;
+	}
+
+	.title.is-1 {
+		font-size: 2.4rem;
+	}
+
+	.subtitle.is-3 {
+		font-size: 1.6rem;
+	}
+
+	.im-passion-img {
+		border: 10px solid rgba(134, 114, 94, 0.329);
+		background-color: rgba(0, 0, 0, 0.7);
+		width: 240px;
+		height: 240px;
+		border-radius: 6000px;
+		display: block;
+		margin: 0 auto;
+	}
+
+	.im-passion-titile {
+		top: 220px;
+	}
+
+	.im-passion-titile span {
+		padding: 0.8rem 1.2rem;
+	}
+
+	.pb-6 {
+		padding-bottom: 0 !important;
+	}
+
+	.mt-5 {
+		margin-top: 0 !important;
+	}
+}
+
+@media screen and (max-width: 1023px) {
+	.navbar-menu {
+		border: 10px solid rgba(134, 114, 94, 0.329);
+		background-color: rgba(0, 0, 0, 0.7);
+		box-shadow: 0 8px 16px rgba(10, 10, 10, 0.1);
+		padding: 0.5rem 0;
+	}
+}
+
+input:-webkit-autofill,
+input:-webkit-autofill:hover, 
+input:-webkit-autofill:focus, 
+input:-webkit-autofill:active {
+    -webkit-box-shadow: 0 0 0 30px #0a0a08 inset !important;
+		-webkit-text-fill-color: #b9b9b9 !important;
+}

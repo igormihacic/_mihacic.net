@@ -1,0 +1,19 @@
+{
+	"name": "_mihacic.net",
+	"version": "1.0.0",
+	"description": "",
+	"main": "index.js",
+	"scripts": {
+		"css:watch": "tailwindcss -i ./src/input.css -o ./public/assets/style/output.css --watch",
+		"css:build": "tailwindcss -i ./src/input.css -o ./public/assets/style/output.css --minify"
+	},
+	"keywords": [],
+	"author": "Igor Mihačič",
+	"license": "MIT",
+	"devDependencies": {
+		"@tailwindcss/forms": "^0.5.3",
+		"prettier": "^2.7.1",
+		"prettier-plugin-tailwindcss": "^0.1.13",
+		"tailwindcss": "^3.2.2"
+	}
+}

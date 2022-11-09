@@ -11,7 +11,17 @@ module.exports = {
 		container: {
 			center: true,
 		},
-		extend: {},
+		screens: {
+			sm: "640px",
+			md: "768px",
+			lg: "1024px",
+			xl: "1280px",
+		},
+		extend: {
+			backgroundImage: {
+				hero: "url('/assets/images/background-hero.webp')",
+			},
+		},
 	},
 	plugins: [
 		require("@tailwindcss/forms")({

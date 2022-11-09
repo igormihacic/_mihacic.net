@@ -3,8 +3,8 @@ module.exports = {
 	content: ["./src/**/*.{html,js}", "./public/**/*.{html,js}"],
 	theme: {
 		colors: {
-			"c-black": "#fff",
-			"c-white": "#000",
+			"c-black": "#000",
+			"c-white": "#fff",
 			"c-orange": "#DB8F00",
 			"c-text": "#B9B9B9",
 		},

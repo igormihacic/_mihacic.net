@@ -5,9 +5,20 @@
 @layer base {
 	.bgGradient {
 		background-color: black;
-		background: linear-gradient(0deg, rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)),
-			url(/assets/images/background-hero.webp) no-repeat center center fixed;
+		background: linear-gradient(90deg, rgba(0 0 0 / 0.7), rgba(0 0 0 / 0.3)),
+			url("/assets/images/background-hero_p.webp") no-repeat center left fixed;
 		background-size: cover;
+	}
+
+	@media screen and (orientation: landscape) {
+		.bgGradient {
+			background: linear-gradient(90deg, rgba(0 0 0 / 0.7), rgba(0 0 0 / 0.3)),
+				url("/assets/images/background-hero.webp") no-repeat center left fixed;
+		}
+	}
+
+	.heroHeight {
+		min-height: 100vh;
 	}
 }
 

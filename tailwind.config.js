@@ -17,11 +17,7 @@ module.exports = {
 			lg: "1024px",
 			xl: "1280px",
 		},
-		extend: {
-			backgroundImage: {
-				hero: "url('/assets/images/background-hero.webp')",
-			},
-		},
+		extend: {},
 	},
 	plugins: [
 		require("@tailwindcss/forms")({

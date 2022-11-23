@@ -24,7 +24,7 @@
 
 @layer components {
 	nav a {
-		@apply relative mx-3 py-2 text-lg text-c-orange;
+		@apply relative mx-3 py-2 text-base font-bold uppercase text-c-orange;
 	}
 
 	nav a.active::before,
@@ -44,5 +44,9 @@
 	nav a.active::before,
 	nav a:hover::before {
 		transform: scaleX(1);
+	}
+
+	.hero-screen {
+		min-height: calc(100vh - 56px);
 	}
 }

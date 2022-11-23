@@ -4,8 +4,8 @@
 	"description": "",
 	"main": "index.js",
 	"scripts": {
-		"css:watch": "tailwindcss -i ./src/input.css -o ./public/assets/style/output.css --watch",
-		"css:build": "tailwindcss -i ./src/input.css -o ./public/assets/style/output.css --minify"
+		"css-watch": "tailwindcss -i ./src/input.css -o ./public/assets/style/output.css --watch",
+		"css-build": "tailwindcss -i ./src/input.css -o ./public/assets/style/output.css --minify"
 	},
 	"keywords": [],
 	"author": "Igor Mihačič",

@@ -11,10 +11,14 @@
 		<!-- This is the flex container that pushes the footer at the bottom on small content pages -->
 		<div class="flex min-h-screen flex-col">
 			<header class="sticky top-0 bg-c-black bg-opacity-60 py-4">
-				<div class="container flex items-center">
-					<div id="logo" class="w-[170px]">
+				<div class="container flex items-center px-4">
+					<div id="logo" class="">
 						<a href="/"
-							><img src="assets/images/mihacic-logo.svg" alt="Back to home!"
+							><img
+								src="assets/images/mihacic-logo.svg"
+								alt="Back to home!"
+								width="170"
+								height="24"
 						/></a>
 					</div>
 					<nav class="grow">
@@ -28,12 +32,24 @@
 				</div>
 			</header>
 			<main class="flex-auto">
-				<section class="h-full">
-					<div class="container">Main</div>
+				<section class="hero-screen flex items-center justify-center">
+					<div
+						class="container flex flex-col flex-wrap items-center px-4 md:flex-row md:justify-around"
+					>
+						<div class="w-64 border border-c-white">pic</div>
+						<div id="parallelogram" class="w-64 border border-c-white">
+							<p>
+								Lorem ipsum dolor sit amet consectetur adipisicing elit. Ea
+								nihil sunt fugit, odio quibusdam adipisci laborum obcaecati
+								veritatis nisi omnis recusandae voluptatum earum optio ullam
+								quis velit impedit quisquam magni!
+							</p>
+						</div>
+					</div>
 				</section>
 			</main>
 			<footer class="bg-c-orange bg-opacity-50">
-				<div class="container text-center">Footer</div>
+				<div class="container px-4 text-center">Footer</div>
 			</footer>
 		</div>
 	</body>

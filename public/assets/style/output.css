@@ -599,10 +599,6 @@ select {
   }
 }
 
-.heroHeight {
-  min-height: 100vh;
-}
-
 *, ::before, ::after {
   --tw-border-spacing-x: 0;
   --tw-border-spacing-y: 0;
@@ -733,8 +729,10 @@ nav a {
   margin-right: 0.75rem;
   padding-top: 0.5rem;
   padding-bottom: 0.5rem;
-  font-size: 1.125rem;
-  line-height: 1.75rem;
+  font-size: 1rem;
+  line-height: 1.5rem;
+  font-weight: 700;
+  text-transform: uppercase;
   --tw-text-opacity: 1;
   color: rgb(219 143 0 / var(--tw-text-opacity));
 }
@@ -758,6 +756,10 @@ nav a.active::before,
   transform: scaleX(1);
 }
 
+.hero-screen {
+  min-height: calc(100vh - 56px);
+}
+
 .sticky {
   position: sticky;
 }
@@ -770,20 +772,12 @@ nav a.active::before,
   display: flex;
 }
 
-.h-full {
-  height: 100%;
-}
-
-.h-auto {
-  height: auto;
-}
-
 .min-h-screen {
   min-height: 100vh;
 }
 
-.w-\[170px\] {
-  width: 170px;
+.w-64 {
+  width: 16rem;
 }
 
 .flex-auto {
@@ -794,6 +788,11 @@ nav a.active::before,
   flex-grow: 1;
 }
 
+.skew-x-12 {
+  --tw-skew-x: 12deg;
+  transform: translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y));
+}
+
 .flex-row {
   flex-direction: row;
 }
@@ -802,12 +801,29 @@ nav a.active::before,
   flex-direction: column;
 }
 
+.flex-wrap {
+  flex-wrap: wrap;
+}
+
 .items-center {
   align-items: center;
 }
 
 .justify-end {
   justify-content: flex-end;
+}
+
+.justify-center {
+  justify-content: center;
+}
+
+.border {
+  border-width: 1px;
+}
+
+.border-c-white {
+  --tw-border-opacity: 1;
+  border-color: rgb(255 255 255 / var(--tw-border-opacity));
 }
 
 .bg-c-black {
@@ -833,6 +849,11 @@ nav a.active::before,
   padding-bottom: 1rem;
 }
 
+.px-4 {
+  padding-left: 1rem;
+  padding-right: 1rem;
+}
+
 .text-center {
   text-align: center;
 }
@@ -840,4 +861,14 @@ nav a.active::before,
 .text-c-text {
   --tw-text-opacity: 1;
   color: rgb(185 185 185 / var(--tw-text-opacity));
+}
+
+@media (min-width: 768px) {
+  .md\:flex-row {
+    flex-direction: row;
+  }
+
+  .md\:justify-around {
+    justify-content: space-around;
+  }
 }

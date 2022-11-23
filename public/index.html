@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" class="scroll-smooth">
 	<head>
 		<meta charset="UTF-8" />
 		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
@@ -10,7 +10,7 @@
 	<body class="bgGradient text-c-text">
 		<!-- This is the flex container that pushes the footer at the bottom on small content pages -->
 		<div class="flex min-h-screen flex-col">
-			<header class="sticky top-0 bg-c-black bg-opacity-60 py-4">
+			<header class="sticky top-0 z-50 bg-c-black bg-opacity-60 py-4">
 				<div class="container flex items-center px-4">
 					<div id="logo" class="">
 						<a href="/"
@@ -32,18 +32,52 @@
 				</div>
 			</header>
 			<main class="flex-auto">
-				<section class="hero-screen flex items-center justify-center">
+				<section class="heroScreen relative flex items-center justify-center">
 					<div
 						class="container flex flex-col flex-wrap items-center px-4 md:flex-row md:justify-around"
 					>
-						<div class="w-64 border border-c-white">pic</div>
-						<div id="parallelogram" class="w-64 border border-c-white">
-							<p>
-								Lorem ipsum dolor sit amet consectetur adipisicing elit. Ea
-								nihil sunt fugit, odio quibusdam adipisci laborum obcaecati
-								veritatis nisi omnis recusandae voluptatum earum optio ullam
-								quis velit impedit quisquam magni!
-							</p>
+						<div>
+							<picture class="rounded-lg">
+								<source srcset="./assets/images/igormihacic.webp" />
+								<img
+									src="./assets/images/igormihacic.jpg"
+									alt="Igor Mihačič"
+									class="borderIm rounded-full"
+									height="300"
+									width="300"
+								/>
+							</picture>
+						</div>
+						<div class="w-1/3">
+							<h1 class="text-5xl font-bold">
+								Welcome to my
+								<span class="glow">playground!</span>
+							</h1>
+							<h2 class="mt-12 text-3xl">
+								Hi, I'm Igor and I'm passionate about a lot of things.
+							</h2>
+						</div>
+					</div>
+					<a href="#test" class="heroScroll"><div class="arrow"></div></a>
+				</section>
+				<section
+					class="heroScreen relative flex items-center justify-center"
+					id="test"
+				>
+					<div
+						class="container flex flex-col flex-wrap items-center px-4 md:flex-row md:justify-around"
+					>
+						<div>
+							<picture class="rounded-lg">
+								<source srcset="./assets/images/igormihacic.webp" />
+								<img
+									src="./assets/images/igormihacic.jpg"
+									alt="Igor Mihačič"
+									class="borderIm rounded-full"
+									height="300"
+									width="300"
+								/>
+							</picture>
 						</div>
 					</div>
 				</section>

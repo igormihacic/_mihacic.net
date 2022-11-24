@@ -1,8 +1,17 @@
+:root {
+	--scrollArrowColor: 219, 143, 0;
+	--scrollArrowOpacity: , 0.4;
+}
+
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
 
 @layer base {
+	body {
+		overflow: overlay;
+	}
+
 	.bgGradient {
 		background-color: black;
 		background: linear-gradient(90deg, rgba(0 0 0 / 0.7), rgba(0 0 0 / 0.3)),
@@ -18,7 +27,7 @@
 	}
 
 	.heroScreen {
-		min-height: calc(100vh - 56px);
+		min-height: calc(100vh - 57px);
 	}
 
 	.borderIm {
@@ -49,45 +58,48 @@
 	nav a:hover::before {
 		transform: scaleX(1);
 	}
-}
 
-.heroScroll {
-	display: flex;
-	justify-content: center;
-	align-items: center;
-	position: absolute;
-	width: 40px;
-	height: 40px;
-	bottom: 10px;
-	border: 2px solid #db8f00;
-	border-radius: 20px;
-	z-index: auto;
-}
-
-.heroScroll div.arrow {
-	border-left: 2px solid #db8f00;
-	border-bottom: 2px solid #db8f00;
-	width: 10px;
-	height: 10px;
-	transform: rotate(-45deg);
-	animation: moveArrow 2s ease-in-out infinite reverse running 1.3s forwards;
-}
-
-@keyframes moveArrow {
-	from {
-		transform: translateY(0px) rotate(-45deg);
+	.headerBorder {
+		border-bottom: 1px solid rgba(219, 143, 0, 0.4);
 	}
 
-	33% {
-		transform: translateY(3px) rotate(-45deg);
+	.heroScroll {
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		position: absolute;
+		width: 40px;
+		height: 40px;
+		bottom: 10px;
+		border: 2px solid rgba(var(--scrollArrowColor) var(--scrollArrowOpacity));
+		border-radius: 20px;
+		z-index: auto;
 	}
 
-	66% {
-		transform: translateY(-5px) rotate(-45deg);
+	.heroScroll div.arrow {
+		border-left: 2px solid
+			rgba(var(--scrollArrowColor) var(--scrollArrowOpacity));
+		border-bottom: 2px solid
+			rgba(var(--scrollArrowColor) var(--scrollArrowOpacity));
+		width: 10px;
+		height: 10px;
+		transform: rotate(-45deg);
+		animation: moveArrow 3s ease-in-out infinite reverse running 2s forwards;
 	}
 
-	to {
-		transform: translateY(0px) rotate(-45deg);
+	@keyframes moveArrow {
+		from {
+			transform: translateY(0px) rotate(-45deg);
+		}
+		33% {
+			transform: translateY(3px) rotate(-45deg);
+		}
+		66% {
+			transform: translateY(-5px) rotate(-45deg);
+		}
+		to {
+			transform: translateY(0px) rotate(-45deg);
+		}
 	}
 }
 
@@ -118,4 +130,21 @@
 		text-shadow: 0 0 10px #fff, 0 0 15px #ffd380, 0 0 20px #ffd380,
 			0 0 25px #ffd380, 0 0 30px #ffd380, 0 0 35px #ffd380, 0 0 40px #ffd380;
 	}
+}
+
+body::-webkit-scrollbar-track {
+	-webkit-box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.3);
+	border-radius: 10px;
+	background-color: transparent;
+}
+
+body::-webkit-scrollbar {
+	width: 12px;
+	background-color: transparent;
+}
+
+body::-webkit-scrollbar-thumb {
+	border-radius: 10px;
+	-webkit-box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.3);
+	background-color: rgba(var(--scrollArrowColor) var(--scrollArrowOpacity));
 }
